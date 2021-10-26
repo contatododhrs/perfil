@@ -6,7 +6,6 @@
     margin: 0;
 }
 
-
 header {
     background-color: gray;
     padding: 20px;
@@ -19,8 +18,30 @@ main {
     font-size: 20px;
 }
 
+#container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.fotos {
+    width: 300px;
+    padding: 20px;
+}
+
 .perfil {
     width: 300px;
     border-radius: 50%;
 }
 
+@media (max-width: 600px) {
+    #container {
+        display: grid;
+    }
+
+    .fotos {
+        width: 100%;
+        padding: 20px 0px;
+    }
+
+}
