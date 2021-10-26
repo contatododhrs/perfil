@@ -20,13 +20,12 @@ main {
 
 #container {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-direction: column;
 }
 
 .fotos {
-    width: 300px;
-    padding: 20px;
+    width: 100%;
+    padding: 20px 0px;
 }
 
 .perfil {
@@ -34,14 +33,16 @@ main {
     border-radius: 50%;
 }
 
-@media (max-width: 600px) {
+@media (min-width: 1024px) {
+    
     #container {
-        display: grid;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
     }
 
     .fotos {
-        width: 100%;
-        padding: 20px 0px;
+        width: 300px;
+        padding: 20px;
     }
-
 }
